@@ -1,0 +1,27 @@
+div {
+    border: 4px solid;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .Annual, .Monthly, .view {
+        width: calc(33.33% - 20px);
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Annual, .Monthly, .view {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .Annual, .Monthly, .view {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}

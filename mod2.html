@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+</head>
+<style>
+    div{
+        border: 4px solid ;
+        border-radius: 3px;
+        margin-bottom: 10px;
+       align-self:center;
+    }
+    @media screen(min-width:992px;){
+        .Annual, .Monthly, .view {
+        width: calc(33.33% - 20px);
+        margin-right: 20px;
+    }
+
+    }
+    @media  (min-width:768px) and (max-width:991px){
+        .Annual, .Monthly .view{
+        width: 50%;
+        float: left;
+        flex-direction: column;
+    }
+
+    }
+    @media  (max-width:767px;) {
+        .Annual, .Monthly, .view {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+        
+    }
+</style>
+<body>
+    <section>
+            <center><h1>Our plans:</h1></center>
+    </section>
+    <div class="Annual">
+        <h3>Annual subscription:</h3>
+        <h4>$95.99 per year </h4>
+        <p> Enjoy the convenience and savings of an annual subscription, access to exclusive content, and the ability to watch UFC events throughout the year.</p>
+    </div>
+    <div class="Monthly">
+        <h3>Monthly subscription:</h3>
+        <h4>$9.99 per month</h4>
+        <p>Flexibility to subscribe on a monthly basis, access to a wide range of UFC content, and the ability to cancel or renew your subscription as needed.</p>
+    </div>
+    <div class="view">
+        <h3 >Pay-Per-View (PPV) :</h3>
+        <h4>$59.99 to $69.99 per event.</h4>
+        <p> Allows fans to watch specific fights or events without committing to a subscription, ideal for occasional viewers or those interested in specific matchups.</p>
+    </div>
+</body>
+</html>
